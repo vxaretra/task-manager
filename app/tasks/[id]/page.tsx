@@ -12,7 +12,7 @@ export default async function TaskDetailPage({ params }: { params: { id: string 
   }
 
   return (
-      <div className="w-1/3 mx-auto min-h-screen flex flex-col justify-center align-middle gap-5">
+      <div className="mx-auto max-w-md min-h-screen flex flex-col justify-center align-middle gap-5">
         <Link className="w-fit px-2 border border-black" href={"/tasks"}>Back</Link>
         <TaskEditForm task={task} edit={updateTask.bind(null, id)} remove={deleteTask.bind(null, id)} />
       </div>
