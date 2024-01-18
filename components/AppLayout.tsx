@@ -9,7 +9,7 @@ type Props = {
 };
 
 export default function AppLayout({ children }: Props) {
-  const [show, setShow] = useState(() => window.innerWidth >= 640);
+  const [show, setShow] = useState(false);
 
   return (
     <>
@@ -25,7 +25,7 @@ export default function AppLayout({ children }: Props) {
           />
         </button>
       </nav>
-      <div className="p-4 sm:ml-64 w-4">{children}</div>
+      <div className="p-4 sm:ml-64">{children}</div>
       <div
         className={`${
           show ? "md:hidden" : "hidden"
