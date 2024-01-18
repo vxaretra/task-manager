@@ -29,7 +29,7 @@ export default function AppLayout({ children }: Props) {
       <div
         className={`${
           show ? "md:hidden" : "hidden"
-        } bg-gray-400 fixed inset-0 z-20`}
+        } bg-gray-400 opacity-50 fixed inset-0 z-20`}
         onClick={() => setShow(false)}
       ></div>
     </>
